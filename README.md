@@ -1,0 +1,4 @@
+schoolfinder
+============
+
+School Finder project
