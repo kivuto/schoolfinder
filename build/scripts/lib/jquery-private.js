@@ -1,1 +1,0 @@
-define(["jquery"],function(e){return console.log("*** jq private start"),e.noConflict(!0)});
