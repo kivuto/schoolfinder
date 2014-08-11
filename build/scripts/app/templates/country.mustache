@@ -1,0 +1,27 @@
+<script id="countryDropDown">
+	<div class="small-12 large-6 columns">
+	  <label for="countryList">Country</label>
+	  <select class="countryList large" id="countryList">
+	  	<option selected disabled="disabled">Select your country</option>
+		<option value="CAN">Canada</option>
+		<option value="USA">United States</option>
+		<option value="GBR">United Kingdom</option>
+		<option disabled="disabled">----------</option>
+		{{#options}}
+	    <option value="{{CountryIsoAlpha3Code}}">{{CountryName}}</option>
+	    {{/options}}
+	  </select>
+	</div>
+</script>
+
+<script id="countryDropDownOptions">
+{{#options}}
+	    <option data-value="{{CountryIsoAlpha3Code}}">{{CountryName}}</option>
+{{/options}}
+</script>
+
+<script id="UulCountryDropDownOptions">
+{{#options}}
+	    <li data-value="{{CountryIsoAlpha3Code}}">{{CountryName}}</li>
+{{/options}}
+</script>

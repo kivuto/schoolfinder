@@ -1,0 +1,282 @@
+<!-- ------------------------
+-- 		1. ONLOAD - Exists in app/templates/app-base.mustache
+------------------------ -->
+
+
+<!-- ------------------------
+-- 		2. SEARCH
+------------------------ -->
+
+<script id="search">
+
+	<div class="msg-wrap">
+		<p class="search-title">Search results for "{{queryString}}"</p>
+		{{#options}}
+		<hr />
+		<p class="search-item"><a href="#">{{OrganizationName}}</a></p>
+		{{/options}}
+		<hr />
+		<p>Can't find you your school? Try another search, or check out our exclusive discounts at the <a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=49c547ba-f56d-dd11-bb6c-0030485a6b08&vsro=8&{{utm}}" title="OnTheHub eStore">OnTheHub eStore!</a></p>
+	</div>
+
+</script>
+
+
+<!-- ------------------------
+-- 		3. FAILED SEARCH
+------------------------ -->
+
+<script id="failedSearch">
+
+	<div class="msg-wrap">
+		<p>Sorry, we weren't able to find any schools matching the search term "{{queryString}}". Try another search, or check out our exclusive discounts at the <a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=49c547ba-f56d-dd11-bb6c-0030485a6b08&vsro=8&{{utm}}" title="OnTheHub eStore">OnTheHub eStore!</a></p>
+	</div>
+
+</script>
+
+
+<!-- ------------------------
+-- 		4. SINGLE ORG NO WEBSTORE
+------------------------ -->
+
+<script id="singleNoWebstore">
+
+	<div class="msg-wrap">
+		<p>Sorry, {{options}} doesn't seem to have a WebStore yet. You can still check out our exclusive discounts at the <a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=49c547ba-f56d-dd11-bb6c-0030485a6b08&vsro=8&{{utm}}" title="OnTheHub eStore">OnTheHub eStore,</a> including the offers below.</p>
+	</div>
+
+</script>
+
+
+<!-- ------------------------
+-- 		5. SINGLE AUTH
+------------------------ -->
+
+<script id="singleAuth">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Go to the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> to access the exclusive discounts available in your school!</p>
+	{{/options}}
+	</div>
+
+</script>
+
+
+<!-- ------------------------
+-- 		6. SINGLE OPEN
+------------------------ -->
+
+<script id="singleOpen">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Here are some of the deals available on your WebStore!</p>
+		<p>Visit the <a href="{{WebStoreUrl}}&{{utm}}"  title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> now to see all the exclusive discounts available to you.</p>
+	{{/options}}
+	</div>
+
+</script>
+
+
+<!-- ------------------------
+-- 		7. PARENT NO - Handled in suborg controller
+------------------------ -->
+
+<!-- ------------------------
+-- 		8. PARENT NO CHILD NO <Uses messaging from 4>
+------------------------ -->
+
+<!-- ------------------------ 
+-- 		9. PARENT NO CHILD AUTH <Uses messaging from 5>
+------------------------ -->
+
+<!-- ------------------------
+-- 		10. PARENT NO CHILD OPEN <Uses messaging from 6>
+------------------------ -->
+
+<!-- ------------------------
+-- 		11. PARENT AUTH - NEW LOGIC: 
+				- Goto link
+				- Choose suborg
+------------------------ -->
+
+<script id="parentAuth">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Go to the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> to access the exclusive discounts available in your school!</p>
+		<p>For even more discounts, select your departmental WebStore from the list above.</p>
+	{{/options}}
+	</div>
+
+</script>
+
+<!-- ------------------------
+-- 		12. PARENT AUTH CHILD NO - NEW LOGIC:
+		16. PARENT OPEN CHILD NO 
+				- No webstore
+				- Show Parent Link
+------------------------ -->
+
+<script id="parentChildNo">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Sorry, {{WebStoreName}} doesn't seem to have a WebStore yet.</p>
+	{{/options}}
+	{{#parent}}
+		<p>There are offers available to all students of {{WebStoreName}} at <a href="{{WebStoreUrl}}&{{partags}}" title="{{WebStoreName}}">your school's WebStore!</a></p>
+	{{/parent}}
+	</div>
+
+</script>
+
+<!-- ------------------------
+-- 		13. PARENT AUTH CHILD AUTH
+-- 		17. PARENT OPEN CHILD AUTH
+------------------------ -->
+
+<script id="parentChildAuth">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Go to the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> to access the exclusive discounts available to members of this department.</p>
+	{{/options}}
+	{{#parent}}
+		<p>There are offers available to all students of {{WebStoreName}} at <a href="{{WebStoreUrl}}&{{partags}}" title="{{WebStoreName}}">your school's WebStore!</a></p>
+	{{/parent}}
+	</div>
+
+</script>
+
+
+<!-- ------------------------
+-- 		14. PARENT AUTH CHILD OPEN
+--- 	18. PARENT OPEN CHILD OPEN
+------------------------ -->
+
+<script id="parentChildOpen">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Here are some of the deals available on your departmental WebStore!</p>
+		<p>Visit the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> now to see all the exclusive discounts available to members of this department.</p>
+	{{/options}}
+	{{#parent}}
+		<p>There are offers available to all students of {{WebStoreName}} at <a href="{{WebStoreUrl}}&{{partags}}" title="{{WebStoreName}}">your school's WebStore!</a></p>
+	{{/parent}}
+	</div>
+
+</script>
+
+
+
+<!-- ------------------------
+-- 		15. PARENT OPEN - new logic - currently single open
+				- Show PMVs
+				- Choose suborg
+------------------------ -->
+
+<script id="parentOpen">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Here are some of the deals available on your WebStore!</p>
+		<p>Visit the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> to see all of the exclusive discounts available to you.</p>
+		<p>For even more discounts, select your departmental WebStore from the list above.</p>
+	{{/options}}
+	</div>
+
+</script>
+
+
+<!-- ------------------------
+-- 		16. k12eStore 
+				- Special Case for k12 Schools with 'the k12 eStore' as their store
+------------------------ -->
+
+<script id="k12eStore">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<!-- p>Here are some of the deals available on your WebStore!</p -->
+		<p>Your organization is eligible for exclusive discounts. Visit the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> to see all of the exclusive discounts available to you.</p>
+	{{/options}}
+	</div>
+
+</script>
+
+<!-- ------------------------
+-- 		17. single-affiliated
+				- New case to catch webStores that are affiliated with the parent organization being searched for
+------------------------ -->
+
+<script id="single-affiliated">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Your organization is eligible for exclusive discounts. Go to your <a href="{{WebStoreUrl}}&{{utm}}">webStore</a> to save.</p>
+	{{/options}}
+	</div>
+
+</script>
+
+<!-- ------------------------
+-- 		18. k12eStore - hardcoded placeholder
+		- Special Case for k12 Schools with 'the k12 eStore' as their store
+------------------------ -->
+
+<script id="defaultk12">
+
+	<div class="msg-wrap">
+		<p>Your organization is eligible for exclusive discounts at the <a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=d6e5fd96-48b9-e111-ad8d-f04da23e67f6&vsro=8&JSEnabled=1&{{utm}}" title="OnTheHub eStore">Elementary and High School Teacher Discounts on Microsoft Office and Windows 8 WebStore</a>.</p>
+	</div>
+
+
+</script>
+
+<!-- ------------------------
+-- 		19. OTHeStore - Hardcoded
+				- Special Case for k12 Schools with 'the k12 eStore' as their store
+------------------------ -->
+
+<script id="defaultOTH">
+
+	<div class="msg-wrap">
+		<p>Your organization does not have a webStore yet. You can still get exclusive discounts at the <a href="http://e5.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?ws=49c547ba-f56d-dd11-bb6c-0030485a6b08&vsro=8&{{utm}}" title="OnTheHub eStore">OnTheHub eStore!</a></p>
+	</div>
+
+
+</script>
+
+<!-- ------------------------
+-- 		19. Single Filtered
+				- Case for whe the webStore exists but we cannot view its product because the filters did not returna nything
+------------------------ -->
+
+<script id="single-filtered">
+
+	<div class="msg-wrap">
+		<p>The good new is that your organization is eligible for exclusive discounts at the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a>.</p>
+		<p>The bad news it that your webStore does not carry the software you are looking for.</p>
+	</div>
+
+
+</script>
+
+<!-- ------------------------
+-- 		Context: Is a Sub Org
+--- 	Args: Has WebStore URL, unAuth is allowed, Has PMVs
+------------------------ -->
+
+<script id="subPMVs">
+
+	<div class="msg-wrap">
+	{{#options}}
+		<p>Here are some of the deals available on your WebStore!</p>
+		<p>Visit the <a href="{{WebStoreUrl}}&{{utm}}" title="{{WebStoreName}}">{{WebStoreName}} WebStore</a> now to see all the exclusive discounts available to you.</p>
+	{{/options}}
+	</div>
+
+</script>
