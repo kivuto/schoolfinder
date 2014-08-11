@@ -1,0 +1,38 @@
+<script id="region-drop-down">
+
+
+	<!-- block starts -->
+	
+	<div class="region-wrap hide small-12 large-6 columns">
+		<label for="stateList">State/Province</label>
+		<select disabled class="region-select input-xlarge">
+			<option disabled>Select State/Province</option>
+			{{#options}}
+			<option value="{{ProvinceCode}}">{{ProvinceName}}</option>
+			{{/options}}		
+	</select>
+	</div>
+	
+	<!-- / ends -->
+
+
+</script>
+
+
+<!-- END --><!-- END --><!-- END --> 
+<!-- END --><!-- END --><!-- END -->
+<!-- END --><!-- END --><!-- END -->
+
+
+<script id="region-drop-down-options">
+
+
+	<!-- block starts -->
+		<option disabled selected>Please select your region</option>
+		{{#options}}
+		<option data-value="{{ProvinceCode}}">{{ProvinceName}}</option>
+		{{/options}}		
+	<!-- / ends -->
+
+
+</script>

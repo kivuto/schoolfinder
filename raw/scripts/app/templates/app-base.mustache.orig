@@ -1,0 +1,120 @@
+<!-- 
+* 		Filename: app/templates/app-base.mustache.js
+*		Desc: Contains multiple clips that can be used to start the application.
+*				- #app-base-buildup is used if you want the
+*				  app to build the form as you go through the process
+*				- #app-base-full will start you off with 'country', 'region' and a 'search' input
+*					- now also includes a wrapper in which to write product HTML
+-->
+
+
+<script id="app-base-buildup">
+	<div class="row kcsf-wrap">
+		<div class="columns kcsf-content">
+		    <form class="kcsf-form">
+		    	<fieldset class="kcsf-fieldset">
+		    	<legend>SchoolFinder</legend>
+		
+		    	</fieldset>
+		    </form>
+		</div>
+	</div>
+</script>
+
+
+<script id="app-base-full">
+
+    <form class="custom">
+
+		<!-- Row (row starts) -->
+		
+		<div class="row" id="location-row">
+
+			<!-- Country block (column starts) -->
+			
+		  <div id="countryWrap" class="small-12 large-6 columns">
+		  	<label for="countryList">Country</label>
+			  <div class="custom dropdown countryList">
+			  	<a href="#" class="current">Select your country</a>
+			  	<a href="#" class="selector"></a>
+			  	<ul id="country-list">
+			  		<li class="selected disabled">Select your country</li>
+			  		<li data-value="CAN">Canada</li>
+			  		<li data-value="USA">United States</li>
+			  		<li data-value="GBR">United Kingdom</li>
+			  		<li class="disabled">----------</li>
+			  	</ul>
+			  </div>
+			</div>
+			
+			<!-- / (column ends) -->
+
+
+
+			<!-- Region block (column starts) -->
+			
+			<div class="region-wrap small-12 large-6 columns">
+				<label for="stateList">State/Province</label>
+				<div class="custom dropdown region-list">
+				  	<a href="#" class="current">&nbsp</a>
+				  	<a href="#" class="selector"></a>
+				  	<ul id="region-list">
+						<li class="disabled">&nbsp;</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- / ends -->
+			
+		</div>
+		
+		<!-- / Row (ends) -->
+		
+		
+		
+		
+		
+		<!-- Search block (row starts) -->
+		
+		<div class="row" id="autocomplete-row">
+	      <div class="large-12 columns autocomplete-wrap">
+	        <label for="autocomplete">Search for your school</label>
+	        <input id="autocomplete" class="large-12" autocomplete="off" data-provide="typeahead" type="text" disabled placeholder="Enter school name">
+	      </div>
+	    </div>
+	    
+		<!-- / (row ends) -->
+
+
+		<!-- Messaging (row starts) -->
+
+		<div class="row" id="messaging-row">
+			<div class="large-12 columns" id="messaging">
+
+			</div>
+		</div>
+
+		<!-- / (row ends) -->
+
+
+		<!-- Products list (row starts) -->
+
+<<<<<<< HEAD
+		<div class="row" id="pmv-row">
+			<div class="large-12 columns">
+				<ul id="pmv-list" class="large-block-grid-4"></ul>
+=======
+		<div class="row">
+			<div class="large-12 columns pmv-wrap">
+				<ul id="pmv-list" class="large-block-grid-4"></ul>
+				<div class="pmv-cover"></div>
+				<div class="pmv-message">Search for your school to access great deals on the software you need!</div>
+>>>>>>> 737b46182cbb4436d630c5851d7e688df1dca737
+			</div>
+		</div>
+
+		<!-- / (row ends) -->
+
+    </form>
+
+</script>

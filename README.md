@@ -1,4 +1,3 @@
 schoolfinder
-============
-
-School Finder application that uses e5 web service API to find users e5 webstore
+==================
+Created on Thu May  9 13:36:06 EST 2013
