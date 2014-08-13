@@ -28,7 +28,7 @@ if (!jQuery) {
 }
 
 require.config({
-    baseUrl: '//localhost/schoolfinder/Working/raw/scripts/lib/',
+    baseUrl: '//localhost/school_finder/raw/scripts/lib/',
     //except, if the module ID starts with "app",
     //load it from the js/app directory. paths
     //config is relative to the baseUrl, and

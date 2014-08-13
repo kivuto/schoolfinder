@@ -1,4 +1,3 @@
-@charset "UTF-8";
 meta.foundation-mq-small {
   font-family: "only screen and (min-width: 768px)";
   width: 768px; }
@@ -1414,16 +1413,16 @@ form.awesome form.custom input[type="checkbox"] + label:before {
     -webkit-border-radius: 1000px;
     border-radius: 1000px;
     padding: 3px; }
-  form.custom .custom.checkbox:before, form.custom form.awesome input[type="radio"] + label.checkbox:before:before, form.awesome form.custom input[type="radio"] + label.checkbox:before:before,
-  form.custom form.awesome input[type="checkbox"] + label.checkbox:before:before,
-  form.awesome form.custom input[type="checkbox"] + label.checkbox:before:before {
+  form.custom .custom.checkbox:before, form.custom form.awesome input[type="radio"] + label.checkbox:before, form.awesome form.custom input[type="radio"] + label.checkbox:before,
+  form.custom form.awesome input[type="checkbox"] + label.checkbox:before,
+  form.awesome form.custom input[type="checkbox"] + label.checkbox:before {
     content: "";
     display: block;
     font-size: 16px;
     color: white; }
-  form.custom .custom.radio.checked:before, form.custom form.awesome input[type="radio"] + label.radio.checked:before:before, form.awesome form.custom input[type="radio"] + label.radio.checked:before:before,
-  form.custom form.awesome input[type="checkbox"] + label.radio.checked:before:before,
-  form.awesome form.custom input[type="checkbox"] + label.radio.checked:before:before {
+  form.custom .custom.radio.checked:before, form.custom form.awesome input[type="radio"] + label.radio.checked:before, form.awesome form.custom input[type="radio"] + label.radio.checked:before,
+  form.custom form.awesome input[type="checkbox"] + label.radio.checked:before,
+  form.awesome form.custom input[type="checkbox"] + label.radio.checked:before {
     content: "";
     display: block;
     width: 8px;
@@ -1432,9 +1431,9 @@ form.awesome form.custom input[type="checkbox"] + label:before {
     border-radius: 1000px;
     background: #222222;
     position: relative; }
-  form.custom .custom.checkbox.checked:before, form.custom form.awesome input[type="radio"] + label.checkbox.checked:before:before, form.awesome form.custom input[type="radio"] + label.checkbox.checked:before:before,
-  form.custom form.awesome input[type="checkbox"] + label.checkbox.checked:before:before,
-  form.awesome form.custom input[type="checkbox"] + label.checkbox.checked:before:before {
+  form.custom .custom.checkbox.checked:before, form.custom form.awesome input[type="radio"] + label.checkbox.checked:before, form.awesome form.custom input[type="radio"] + label.checkbox.checked:before,
+  form.custom form.awesome input[type="checkbox"] + label.checkbox.checked:before,
+  form.awesome form.custom input[type="checkbox"] + label.checkbox.checked:before {
     content: "\00d7";
     color: #222222;
     position: absolute;
@@ -1970,7 +1969,7 @@ form.awesome .dropdown {
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown div.btn, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown:before div.btn, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown:before div.btn,
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="checkbox"] + label.dropdown:before div.btn,
   form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown:before div.btn {
-    background: #05bad6;
+    background: #11689c;
     height: 2.3125em;
     width: 2.5125em;
     position: absolute;
@@ -1995,7 +1994,7 @@ form.awesome .dropdown {
     form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown.disabled:hover:before div.btn, #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown.disabled.open div.btn, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown.disabled.open:before div.btn, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown.disabled.open:before div.btn,
     #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="checkbox"] + label.dropdown.disabled.open:before div.btn,
     form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown.disabled.open:before div.btn {
-      background: #05bad6; }
+      background: #11689c; }
     #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown.disabled:hover .selector:after, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown.disabled:hover:before .selector:after, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown.disabled:hover:before .selector:after,
     #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="checkbox"] + label.dropdown.disabled:hover:before .selector:after,
     form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown.disabled:hover:before .selector:after, #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown.disabled.open .selector:after, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown.disabled.open:before .selector:after, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown.disabled.open:before .selector:after,
@@ -2005,7 +2004,7 @@ form.awesome .dropdown {
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown.set div.btn, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown.set:before div.btn, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown.set:before div.btn,
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="checkbox"] + label.dropdown.set:before div.btn,
   form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown.set:before div.btn {
-    background: #05bad6 url("../img/check.png") no-repeat center center; }
+    background: #11689c url("../img/check.png") no-repeat center center; }
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown.set .selector:after, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown.set:before .selector:after, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown.set:before .selector:after,
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="checkbox"] + label.dropdown.set:before .selector:after,
   form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown.set:before .selector:after {
@@ -2015,7 +2014,7 @@ form.awesome .dropdown {
   form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown:hover:before div.btn, #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown.open div.btn, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown.open:before div.btn, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown.open:before div.btn,
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="checkbox"] + label.dropdown.open:before div.btn,
   form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown.open:before div.btn {
-    background: #05c7e5; }
+    background: #1371aa; }
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown:hover .selector:after, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown:hover:before .selector:after, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown:hover:before .selector:after,
   #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="checkbox"] + label.dropdown:hover:before .selector:after,
   form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="checkbox"] + label.dropdown:hover:before .selector:after, #oth-schoolfinder-wrapper .kc-wrap-full form.custom .custom.dropdown.open .selector:after, #oth-schoolfinder-wrapper .kc-wrap-full form.custom form.awesome input[type="radio"] + label.dropdown.open:before .selector:after, form.awesome #oth-schoolfinder-wrapper .kc-wrap-full form.custom input[type="radio"] + label.dropdown.open:before .selector:after,
@@ -2026,18 +2025,18 @@ form.awesome .dropdown {
     display: block;
     width: 35px;
     height: 32px;
-    background: #05bad6 url("../img/search-btn.png") no-repeat center center;
+    background: #11689c url("../img/search-btn.png") no-repeat center center;
     top: 1.0625em;
     right: 0.9375em;
     position: absolute;
     z-index: 3;
     cursor: pointer; }
     #oth-schoolfinder-wrapper .autocomplete-wrap .search-btn.set {
-      background: #05bad6 url("../img/check.png") no-repeat center center; }
+      background: #11689c url("../img/check.png") no-repeat center center; }
       #oth-schoolfinder-wrapper .autocomplete-wrap .search-btn.set:hover {
-        background: #05c7e5 url("../img/search-btn.png") no-repeat center center; }
+        background: #1371aa url("../img/search-btn.png") no-repeat center center; }
     #oth-schoolfinder-wrapper .autocomplete-wrap .search-btn:hover {
-      background: #05c7e5 url("../img/search-btn.png") no-repeat center center; }
+      background: #1371aa url("../img/search-btn.png") no-repeat center center; }
   #oth-schoolfinder-wrapper .autocomplete-wrap .loading {
     display: none;
     width: 35px;
@@ -2114,7 +2113,7 @@ form.awesome .dropdown {
       list-style: none;
       padding: 0 5px 10px; }
     #oth-schoolfinder-wrapper #pmv-list .more-li a {
-      background: #05bad6 url("../img/oth-schoolfinder-more-products.png") no-repeat 50% 50%;
+      background: #11689c url("../img/oth-schoolfinder-more-products.png") no-repeat 50% 50%;
       min-width: 170px; }
     #oth-schoolfinder-wrapper #pmv-list .adobecc-li a {
       background: transparent url("../img/adobe-cc-school-finder-white.jpg") no-repeat 50% 50%;

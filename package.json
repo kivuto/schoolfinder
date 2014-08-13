@@ -1,0 +1,28 @@
+{
+  "name": "school_finder",
+  "version": "1.0.0",
+  "description": "School Finder Web Application For Helping Users Find Their School WenStore Powered By The e5 API",
+  "main": "/raw/index.html",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kivuto/schoolfinder"
+  },
+  "keywords": [
+    "e5",
+    "Kivuto",
+    "API"
+  ],
+  "author": "Jesse Burcsik, Nathan Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kivuto/schoolfinder/issues"
+  },
+  "homepage": "https://github.com/kivuto/schoolfinder"
+}
