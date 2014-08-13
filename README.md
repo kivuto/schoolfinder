@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 WORK FLOW FOR PROJECT
 -------------------------------
 
@@ -19,3 +20,9 @@ FOR THE PROJECT
 For Merges Use a Merge tool
 	http://twobitlabs.com/2011/08/install-diffmerge-git-mac-os-x/
 		- $ git mergetool
+=======
+schoolfinder
+============
+
+School Finder project
+>>>>>>> 6fbd53df9b0639fe14c891234946e53ebbf305e7
